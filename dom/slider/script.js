@@ -15,6 +15,7 @@ const leftButton = document.querySelector(".left-arrow");
 const rightButton = document.querySelector(".right-arrow");
 
 leftButton.addEventListener("click", function () {
+  rightButton.classList.add("arrow_active");
   if (marginActual < 0) {
     marginActual += slideWidth;
     slides[0].style.marginLeft = marginActual + "px";
@@ -27,6 +28,7 @@ leftButton.addEventListener("click", function () {
 });
 
 rightButton.addEventListener("click", function () {
+  leftButton.classList.add("arrow_active");
   if (marginActual > marginMax) {
     marginActual -= slideWidth;
     slides[0].style.marginLeft = marginActual + "px";

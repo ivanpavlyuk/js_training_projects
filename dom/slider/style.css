@@ -15,6 +15,7 @@
   transform: translateY(calc(50vh - 50%));
   width: 600px;
   margin: 0 auto;
+  border-right: 1px solid black;
 }
 .slider__list {
   display: flex;
@@ -28,9 +29,11 @@
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+  border-right: none;
   width: 150px;
   height: 150px;
   background-color: lightskyblue;
+  transition: 0.5s;
 }
 
 .arrow {
@@ -56,10 +59,15 @@
   display: block;
   height: 10px;
   position: relative;
+  transition: background-color 0.5s;
 }
 
 .arrow_active * {
   background-color: black;
+}
+
+.arrow_active {
+  cursor: pointer;
 }
 
 .up-bar,
