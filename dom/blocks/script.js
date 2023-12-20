@@ -4,7 +4,7 @@ const quantity = document.getElementById("quantity");
 let isEven = true;
 
 quantity.addEventListener("input", createBlocks);
-color.addEventListener("input", changeColor);
+color.addEventListener("change", changeColor);
 
 function createBlocks() {
   list.innerHTML = "";
