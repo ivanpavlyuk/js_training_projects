@@ -1,0 +1,16 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+}
